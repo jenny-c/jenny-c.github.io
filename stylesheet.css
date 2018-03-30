@@ -1,12 +1,30 @@
-#poem {
-  margin-right: 50%;
-  margin-top: 13%;
-}
-
 h1, p {
   text-align: center;
 }
 
 p {
   font-size: 1.2em;
+}
+
+button {
+     background:none!important;
+     color:inherit;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444;
+     cursor: pointer;
+}
+
+#poem {
+  margin-right: 50%;
+  margin-top: 12%;
+}
+
+#media {
+  margin-left: 60%;
+  margin-right: 10;
+  margin-top: 12%;
+  margin-bottom: 12%;
 }
