@@ -9,31 +9,153 @@
 </head>
 
 <body>
-  <!--background music-->
-  <audio src="/music/waves.mp3">
-    <p>If you are reading this, it is because your browser does not support the audio element.</p>
-  </audio>
 
   <!--poem side-->
   <div id="poem">
 
     <h1>The Love Song of J. Alfred Prufrock</h1>
-    <p>T. S. Eliot</p>
-    <p>lines 126-131</p><br>
+    <p>T. S. Eliot</p><br>
+    <p>lines 126-131</p><br><br>
 
-    <p>I have seen them riding seaward on the waves</p>
-    <p>Combing the white hair of the waves blown back</p>
-    <p>When the wind blows the water white and black.</p>
-    <p>We have lingered in the chambers of the sea</p>
-    <p>By sea-girls wreathed with seaweed red and brown</p>
-    <p>Till human voices wake us, and we drown.</p>
+    <p>I have seen them</p> <button onclick="seaward()">riding seaward on the waves</button><br>
+    <button onclick="whiteHair()">Combing the white hair</button> <p>of the waves blown back</p><br>
+    <p>When the</p> <button onclick="windWaves()">wind blows the water</button> <button onclick="whiteBlack()">white and black.</button><br>
+    <button onclick="lingered()">We have lingered</button> <p>in the</p> <button onclick="chambers()">chambers</button> <p>of the</p> <button onclick="sea()">sea</button><br>
+    <p>By</p> <button onclick="seagirls()">sea-girls</button> <button onclick="wreathed()">wreathed</button> <p>with seaweed red and brown</p><br>
+    <p>Till</p> <button onclick="humanVoices()">human voices wake us, and we drown.</button><br>
 
   </div>
 
   <!--links/media-->
   <div id="media">
 
+    <div id="seaward" style="display:none;">
+      <p>seaward</p>
+    </div>
+
+    <div id="whiteHair" style="display:none;">
+      <p>whiteHair</p>
+    </div>
+
+    <div id="windWaves" style="display:none;">
+      <p>Jenny Chen</p><br>
+      <p id="define">Wind Waves</p><p> - surface waves that occur on the free surface of vodies of water</p>
+    </div>
+
+    <div id="whiteBlack" style="display:none">
+      <p>whiteblack</p>
+    </div>
+
+    <div id="lingered" style="display:none">
+      <p>lingered</p>
+    </div>
+
+    <div id="chambers" style="display:none">
+      <p>chambers</p>
+    </div>
+
+    <div id="sea" style="display:none;">
+      <p>sea</p>
+    </div>
+
+    <div id="seagirls" style="display:none;">
+      <p>seagirls</p>
+    </div>
+
+    <div id="wreathed" style="display:none;">
+      <p>wreathed</p>
+    </div>
+
+    <div id="humanVoices" style="display:none;">
+      <p>humanvoices</p>
+    </div>
+
   </div>
-</body>
+
+  <!--background music-->
+  <audio autoplay loop controls src="audio/waves.mp3">
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+  </audio>
+
+  <script>
+    var links = ["seaward", "whiteHair", "windWaves", "whiteBlack", "lingered", "chambers", "sea", "seagirls", "wreathed", "humanVoices"];
+
+    function seaward() {
+      reset();
+      var x = document.getElementById("seaward");
+      displayContent(x);
+    }
+
+    function whiteHair() {
+      reset();
+      var x = document.getElementById("whiteHair");
+      displayContent(x);
+    }
+
+    function windWaves() {
+      reset();
+      var x = document.getElementById("windWaves");
+      displayContent(x);
+    }
+
+    function whiteBlack() {
+      reset();
+      var x = document.getElementById("whiteBlack");
+      displayContent(x);
+    }
+
+    function lingered() {
+      reset();
+      var x = document.getElementById("lingered");
+      displayContent(x);
+    }
+
+    function chambers() {
+      reset();
+      var x = document.getElementById("chambers");
+      displayContent(x);
+    }
+
+    function sea() {
+      reset();
+      var x = document.getElementById("sea");
+      displayContent(x);
+    }
+
+    function seagirls() {
+      reset();
+      var x = document.getElementById("seagirls");
+      displayContent(x);
+    }
+
+    function wreathed() {
+      reset();
+      var x = document.getElementById("wreathed");
+      displayContent(x);
+    }
+
+    function humanVoices() {
+      reset();
+      var x = document.getElementById("humanVoices");
+      displayContent(x);
+    }
+
+    function reset() {
+      for (i = 0; i < links.length; i++) {
+        if (document.getElementById(links[i]).style.display === "block") {
+          document.getElementById(links[i]).style.display = "none";
+          break;
+        }
+      }
+    }
+
+    function displayContent(elem) {
+      if (elem.style.display === "none") {
+          elem.style.display = "block";
+      } else {
+          elem.style.display = "none";
+      }
+    }
+  </script>
 
 </html>
