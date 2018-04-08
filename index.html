@@ -22,7 +22,9 @@
     <p>When the</p> <button onclick="windWaves()">wind blows the water</button> <button onclick="whiteBlack()">white and black.</button><br>
     <button onclick="lingered()">We have lingered</button> <p>in the</p> <button onclick="chambers()">chambers</button> <p>of the</p> <button onclick="sea()">sea</button><br>
     <p>By</p> <button onclick="seagirls()">sea-girls</button> <button onclick="wreathed()">wreathed</button> <p>with seaweed red and brown</p><br>
-    <p>Till</p> <button onclick="humanVoices()">human voices wake us, and we drown.</button><br>
+    <p>Till</p> <button onclick="humanVoices()">human voices wake us, and we drown.</button><br><br>
+
+    <button onclick"citations()">citations</button>
 
   </div>
 
@@ -43,7 +45,22 @@
     </div>
 
     <div id="whiteBlack" style="display:none">
-      <p>whiteblack</p>
+      <img src="media/whiteBlack.jpg" alt="abstract drawing of black and white waves">
+
+      <h2>white black waves</h2>
+      <p>the up and down,</p><br>
+      <p>the ebb and flow,</p><br>
+      <p>the monotony of the waves.</p><br>
+      <p>it's hypnotizing.</p><br>
+      <p>its mind-numbing.</p><br><br>
+
+      <p>over and over,</p><br>
+      <p>the white feeds into the black,</p><br>
+      <p>feeds into the white.</p><br>
+      <p>oh how i long to see</p><br>
+      <p>the colours underneath</p><br><br>
+
+      <p>The words "white and black" here give the rest of the stanza a bleak overtone.</p>
     </div>
 
     <div id="lingered" style="display:none">
@@ -52,6 +69,7 @@
 
     <div id="chambers" style="display:none">
       <p>chambers</p>
+      <iframe></iframe>
     </div>
 
     <div id="sea" style="display:none;">
@@ -68,6 +86,10 @@
 
     <div id="humanVoices" style="display:none;">
       <p>humanvoices</p>
+    </div>
+
+    <div id="citations" style="display:none;">
+      <h2>citations</h2>
     </div>
 
   </div>
@@ -135,6 +157,12 @@
     }
 
     function humanVoices() {
+      reset();
+      var x = document.getElementById("humanVoices");
+      displayContent(x);
+    }
+
+    function citations() {
       reset();
       var x = document.getElementById("humanVoices");
       displayContent(x);
