@@ -2,6 +2,10 @@ h1, p {
   text-align: center;
 }
 
+h1 {
+  text-decoration: underline;
+}
+
 p {
   font-size: 1.2em;
   display: inline;
@@ -36,21 +40,33 @@ img {
 }
 
 #poem {
-  margin-top: 12%;
+  margin-top: 8%;
   margin-bottom: 12%;
   width: 40%;
   float: left;
   text-align: center;
 }
 
+#wealthPoem {
+  line-height: 1.5em;
+}
+
+#citations {
+  text-align: left;
+}
 
 .media {
   box-sizing: border-box;
-  margin-top: 12%;
+  margin-top: 8%;
   margin-bottom: 12%;
   width: 60%;
   float: right;
   text-align: center;
-  padding: 60px;
+  padding-left: 60px;
   padding-right: 80px;
+}
+
+.tab {
+  display:inline-block;
+  margin-left: 40px; 
 }
