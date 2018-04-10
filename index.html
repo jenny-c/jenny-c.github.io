@@ -72,7 +72,7 @@
 
       <img src="media/waves.jpg"><br><br>
 
-      <p>Chaos is one of the themes of modernism; the modern world is seen as having no rules, and as a place where anything can happen. When Eliot writes “the wind blows the water”, imagery is formed of waves crashing, seemingly at random. Aside from the physics of waves, the way these waves are created is random; there are no rules or traditions to say how the wind should blow, or how the waves should be formed. When we look at the etymology of the phrase “wind waves”, we see that the creation of them is considered a stochastic process or that there is a degree of randomness in it. Although the overall flow of the water remains the same (just like how society follows the same meaningless routines), the individual waves are random. This reflects how the world depicted by modernism lacks structure and doesn't follow traditional rules/rituals.</p>
+      <p>Chaos is one of the themes of modernism; the modern world is seen as having no rules, and as a place where anything can happen. When Eliot writes “the wind blows the water”, imagery is formed of waves crashing, seemingly at random. Aside from the physics of waves, the way these waves are created is random; there are no rules or traditions to say how the wind should blow, or how the waves should be formed. When we look at the etymology of the phrase “wind waves”, we see that the creation of them is considered a stochastic process or that there is a degree of randomness in it. Although the overall flow of the water remains the same (just like how society follows the same meaningless routines), the individual waves are random. This reflects how the world depicted by modernism lacks structure and doesn't follow traditional rules/rituals.</p><br><br>
 
       <p>The same lack of tradition and rule-breaking is seen in Simon and Garfunkel's song <i>Mrs. Robinson</i>. Although it was renamed to fit the movie <i>The Graduate</i>, the song was first written about Eleanor Roosevelt, but the lyrics in the fifth stanza "Hide it in a hiding place where no one ever goes/ Put it in your pantry with your cupcakes/ It's a little secret, just the Robinsons' affair/ Most of all, you've got to hide it from the kids" ("Simon & Garfunkel") can apply to both of them. These lyrics refer to the affairs that both women allegedly had. However, in their time, women were expected to repress their emotions and not let the rest of society see them. In this way, both women were rule-breakers, and Eleanor was even rumoured to be a lesbian, which was much less accepted back then.</p>
     </div>
@@ -338,54 +338,63 @@
       reset();
       document.getElementById("seaward").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function whiteHair() {
       reset();
       document.getElementById("whiteHair").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function windWaves() {
       reset();
       document.getElementById("windWaves").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function whiteBlack() {
       reset();
       document.getElementById("whiteBlack").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function lingered() {
       reset();
       document.getElementById("lingered").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function chambers() {
       reset();
       document.getElementById("chambers").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function sea() {
       reset();
       document.getElementById("sea").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function seagirls() {
       reset();
       document.getElementById("seagirls").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function wreathed() {
       reset();
       document.getElementById("wreathed").style.display = "block";
       playMusic();
+      topFunction()
     }
 
     function humanVoices() {
@@ -393,11 +402,14 @@
       document.getElementById("humanVoices").style.display = "block";
       document.getElementById("wavesAudio").pause();
       document.getElementById("soundOfSilenceAudio").play();
+      topFunction()
     }
 
     function citations() {
       reset();
       document.getElementById("citations").style.display = "block";
+      playMusic();
+      topFunction()
     }
 
     function playMusic() {
@@ -414,6 +426,11 @@
           break;
         }
       }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   </script>
 
